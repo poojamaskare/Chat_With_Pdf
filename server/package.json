@@ -24,6 +24,7 @@
     "express": "~4.22.1",
     "langchain": "^1.2.16",
     "multer": "^2.0.2",
+    "ollama": "^0.6.3",
     "pdf-parse": "1.1.1"
   },
   "devDependencies": {
