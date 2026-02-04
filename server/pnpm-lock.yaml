@@ -14,6 +14,9 @@ importers:
       '@langchain/core':
         specifier: ^1.1.18
         version: 1.1.18(openai@6.17.0(ws@8.19.0)(zod@4.3.6))
+      '@langchain/ollama':
+        specifier: ^1.2.2
+        version: 1.2.2(@langchain/core@1.1.18(openai@6.17.0(ws@8.19.0)(zod@4.3.6)))
       '@langchain/openai':
         specifier: ^1.2.4
         version: 1.2.4(@langchain/core@1.1.18(openai@6.17.0(ws@8.19.0)(zod@4.3.6)))(ws@8.19.0)
@@ -497,6 +500,12 @@ packages:
     peerDependenciesMeta:
       zod-to-json-schema:
         optional: true
+
+  '@langchain/ollama@1.2.2':
+    resolution: {integrity: sha512-UmbDSToADT15O7kMBm+0MVs/Zie8SHVFMKt4BDSyunXZOgDdqIPvc4pEqy50m1/gq6kIaVuR2hRAy5kcF0V8kg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@langchain/core': ^1.0.0
 
   '@langchain/openai@1.2.4':
     resolution: {integrity: sha512-3ThBOIXAJ6eXuqGGO41XDgr4rp/qpl/RpZmGcjv1S3+CRLS4UQBgXkZEab7mun85HfdsUWLs/v1+pDwbMFixcA==}
@@ -1629,6 +1638,12 @@ snapshots:
       - react
       - react-dom
 
+  '@langchain/ollama@1.2.2(@langchain/core@1.1.18(openai@6.17.0(ws@8.19.0)(zod@4.3.6)))':
+    dependencies:
+      '@langchain/core': 1.1.18(openai@6.17.0(ws@8.19.0)(zod@4.3.6))
+      ollama: 0.6.3
+      uuid: 10.0.0
+
   '@langchain/openai@1.2.4(@langchain/core@1.1.18(openai@6.17.0(ws@8.19.0)(zod@4.3.6)))(ws@8.19.0)':
     dependencies:
       '@langchain/core': 1.1.18(openai@6.17.0(ws@8.19.0)(zod@4.3.6))
@@ -2124,7 +2139,7 @@ snapshots:
       isstream: 0.1.2
       jsonwebtoken: 9.0.3
       mime-types: 2.1.35
-      retry-axios: 2.6.0(axios@1.13.4(debug@4.4.3))
+      retry-axios: 2.6.0(axios@1.13.4)
       tough-cookie: 4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -2432,7 +2447,7 @@ snapshots:
 
   requires-port@1.0.0: {}
 
-  retry-axios@2.6.0(axios@1.13.4(debug@4.4.3)):
+  retry-axios@2.6.0(axios@1.13.4):
     dependencies:
       axios: 1.13.4(debug@4.4.3)
 

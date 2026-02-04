@@ -1,6 +1,6 @@
 import { Worker } from "bullmq";
 import { QdrantVectorStore } from "@langchain/qdrant";
-import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
+import { OllamaEmbeddings } from "@langchain/ollama";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
 import { CharacterTextSplitter } from "@langchain/textsplitters";
 
@@ -35,15 +35,7 @@ const worker = new Worker(
 
     console.log("PDF embeddings stored successfully ✅");
   },
-      const vectorStore=await QdrantVectorStore.fromDocuments(
-        docs,
-        embeddings,{
-            client,
-            collectionName:'pdf-docs'
-        }
-        
 
-  )
   {
     concurrency: 100,
     connection: {
