@@ -51,7 +51,7 @@ app.post('/upload/pdf', upload.single('pdf'), async (req, res) => {
 
 app.get('/chat', async (req, res) => {
     try {
-        const userQuery = req.query.q || "what questions are their of Binary Tree";
+        const userQuery = req.query.message;
 
         const embeddings = new OllamaEmbeddings({
             model: "nomic-embed-text",
@@ -75,7 +75,7 @@ app.get('/chat', async (req, res) => {
         
         `;
         const llm = new ChatOllama({
-            model: "llama3",
+            model: "llama3.2:1b",
             temperature: 0,
             baseUrl: "http://localhost:11434",
         });
