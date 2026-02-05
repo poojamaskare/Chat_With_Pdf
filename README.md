@@ -1,10 +1,10 @@
-# 📚 Chat with PDF
+# Chat with PDF
 
 A **fully local AI-powered chatbot** that lets you upload PDF documents and ask questions about their content. Built with RAG (Retrieval Augmented Generation) architecture — runs 100% offline with no API keys required.
 
 
 
-## ✨ Features
+##  Features
 
 - 🔒 **100% Local & Private** — No data leaves your machine
 - 💰 **Zero API Costs** — Uses Ollama for free local AI
@@ -15,7 +15,7 @@ A **fully local AI-powered chatbot** that lets you upload PDF documents and ask 
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -35,7 +35,7 @@ A **fully local AI-powered chatbot** that lets you upload PDF documents and ask 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -50,7 +50,7 @@ A **fully local AI-powered chatbot** that lets you upload PDF documents and ask 
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - [Node.js](https://nodejs.org/) v18+
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
@@ -176,22 +176,5 @@ chat_with_pdf/
 | `GET` | `/chat?message=...` | Ask a question |
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🙏 Acknowledgments
-
-- [Ollama](https://ollama.ai/) for local LLM support
-- [LangChain](https://langchain.com/) for the RAG framework
-- [Qdrant](https://qdrant.tech/) for vector search
-- [Piyush Garg](https://www.youtube.com/@paboromat) for the tutorial inspiration
+#Results
+<img width="940" height="458" alt="image" src="https://github.com/user-attachments/assets/bcab5100-8b98-4cd1-b62c-5aa6af8fb514" />
